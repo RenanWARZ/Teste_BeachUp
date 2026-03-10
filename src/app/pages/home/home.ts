@@ -13,7 +13,7 @@ import { LoaderService } from '../../shared/page-loader/loader.service';
   styleUrl: './home.css',
 })
 export class Home {
-[x: string]: any;
+  [x: string]: any;
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private router: Router,
@@ -24,8 +24,10 @@ export class Home {
     this.loader.show();
 
     setTimeout(() => {
-      this.router.navigate([rota]);
-      this.loader.hide();
+      this.router.navigate([rota]).then(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        this.loader.hide();
+      });
     }, 1000);
   }
 }

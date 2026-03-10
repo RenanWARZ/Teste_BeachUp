@@ -30,7 +30,8 @@
       "default",
       {
         "ignore": [
-          "backdrop-filter"
+          "backdrop-filter",
+          "display: ruby"
         ]
       }
     ]

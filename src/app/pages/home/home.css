@@ -66,8 +66,6 @@ body {
   letter-spacing: .5px;
 }
 
-/* botões direita */
-
 .topbar-link {
   color: white !important;
 }
@@ -346,10 +344,7 @@ button[mat-button].btn-plano {
   background: linear-gradient(145deg, white, #000000f9);
 }
 
-h3,
-h4,
-li,
-p {
+h3,h4,li,p {
   color: black;
 }
 
