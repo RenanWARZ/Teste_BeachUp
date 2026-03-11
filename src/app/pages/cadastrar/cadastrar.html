@@ -1,38 +1,48 @@
-<div class="logo">
-  <img src="/logo/logo.png" alt="Logo" id="logo" />
-  BeachUp
-</div>
+<div class="register-page">
+  <div class="register-layout">
+    <section class="hero-section">
+      <img src="assets/fundo/fundo-card.jpeg" class="hero-image" />
+      <div class="diagonal-divider"></div>
+    </section>
 
-<div class="card">
-  <h1>Crie sua conta</h1>
+    <section class="form-section">
+      <div class="form-wrapper">
 
-  <div class="input-group">
-    <i class="bi bi-person"></i>
-    <input type="text" placeholder="Nome completo" />
+        <div class="brand">
+          <span class="brand-white">Beach</span><span class="brand-orange">Up</span>
+        </div>
+
+        <h1>Criar conta</h1>
+
+        <form>
+
+          <input type="text" formControlName="fullName" placeholder="Nome completo">
+
+          <input type="email" formControlName="email" placeholder="Email">
+
+          <input type="password" formControlName="password" placeholder="Senha">
+
+          <input type="password" formControlName="confirmPassword" placeholder="Confirmar senha">
+
+          <select>
+            <option value="">Cidade</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Criar conta</button>
+
+          <div class="divider">ou</div>
+
+          <button type="button" class="btn-google">
+            Entrar com Google
+          </button>
+
+          <p class="login-text">
+            Já tem conta? <a>Entrar</a>
+          </p>
+
+        </form>
+
+      </div>
+    </section>
   </div>
-
-  <div class="input-group">
-    <i class="bi bi-envelope"></i>
-    <input type="email" placeholder="E-mail" />
-  </div>
-
-  <div class="input-group">
-    <i class="bi bi-telephone"></i>
-    <input type="text" placeholder="Telefone" />
-  </div>
-
-  <div class="input-group">
-    <i class="bi bi-lock"></i>
-    <input type="password" placeholder="Senha" />
-  </div>
-
-  <div class="checkbox">
-    <input type="checkbox" id="terms" />
-    <label for="terms" class="terms">Concordo com os <a href="#">termos de uso</a></label>
-  </div>
-
-  <button class="btn">Criar minha conta</button>
-  <button class="btn btn-secondary">Avançar dono de quadra</button>
-
-  <div class="footer">Já tem conta? <a href="#">Entrar</a></div>
 </div>

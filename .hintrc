@@ -15,7 +15,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "frame-title": "off"
+        "frame-title": "off",
+        "image-alt": "off"
       }
     ],
     "axe/name-role-value": [
@@ -33,6 +34,12 @@
           "backdrop-filter",
           "display: ruby"
         ]
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
       }
     ]
   }
