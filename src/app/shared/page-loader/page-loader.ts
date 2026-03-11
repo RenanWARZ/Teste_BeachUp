@@ -10,7 +10,7 @@ import { Injectable, signal } from '@angular/core';
   templateUrl: './page-loader.html',
   styleUrl: './page-loader.css',
 })
-export class PageLoaderComponent {
+export class PageLoader {
   @Input() isVisible = false;
 }
 

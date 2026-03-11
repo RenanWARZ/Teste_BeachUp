@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
-import { PageLoaderComponent } from './shared/page-loader/page-loader';
+import { PageLoader } from './shared/page-loader/page-loader';
 import { LoaderService } from './shared/page-loader/loader.service';
 
 @Component({
   selector: 'app-root',
-  imports: [MatCardModule, RouterOutlet, PageLoaderComponent],
+  imports: [MatCardModule, RouterOutlet, PageLoader],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

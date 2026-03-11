@@ -19,9 +19,9 @@
     </div>
 
     <div class="topbar-right">
-      <a class="topbar-cta" mat-raised-button (click)="irPara('/sobre')">
-        <mat-icon>info</mat-icon>
-        Sobre
+      <a class="topbar-cta" mat-raised-button (click)="irPara('/login')">
+        <mat-icon>person</mat-icon>
+        Login
       </a>
 
       <a class="topbar-cta" mat-raised-button (click)="irPara('/cadastrar')">
@@ -43,9 +43,8 @@
     </div>
 
     <div class="offcanvas-body">
-      <a routerLink="/lala" data-bs-dismiss="offcanvas">Home</a>
-      <a routerLink="/sobre" data-bs-dismiss="offcanvas">Sobre</a>
-      <a routerLink="/contato" data-bs-dismiss="offcanvas">Contato</a>
+      <a routerLink="/" data-bs-dismiss="offcanvas">Home</a>
+      <a (click)="irPara('/sobre')" data-bs-dismiss="offcanvas">Sobre-nos</a>
     </div>
   </div>
 

@@ -1,9 +1,8 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatAnchor } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { Router } from '@angular/router';
-import { LoaderService } from '../../shared/page-loader/loader.service';
+import { NavigationService } from '../../shared/services/navigation';
 
 @Component({
   selector: 'app-home',
@@ -13,21 +12,9 @@ import { LoaderService } from '../../shared/page-loader/loader.service';
   styleUrl: './home.css',
 })
 export class Home {
-  [x: string]: any;
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: Object,
-    private router: Router,
-    private loader: LoaderService,
-  ) {}
+  constructor(private navigation: NavigationService) {}
 
   irPara(rota: string) {
-    this.loader.show();
-
-    setTimeout(() => {
-      this.router.navigate([rota]).then(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        this.loader.hide();
-      });
-    }, 1000);
+    this.navigation.irPara(rota);
   }
 }
