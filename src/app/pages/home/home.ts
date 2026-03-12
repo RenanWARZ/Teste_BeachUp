@@ -11,8 +11,9 @@ import { NavigationService } from '../../shared/services/navigation';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
+
 export class Home {
-  constructor(private navigation: NavigationService) {}
+  constructor(public navigation: NavigationService) {}
 
   irPara(rota: string) {
     this.navigation.irPara(rota);

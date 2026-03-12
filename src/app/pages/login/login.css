@@ -170,3 +170,20 @@ select {
 #btn:hover {
   color: #a54500;
 }
+
+.home a {
+  color: #ff6a00;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.home mat-icon {
+  font-size: 20px;
+}
+
+.home a:hover{
+  color: #a54500;
+}

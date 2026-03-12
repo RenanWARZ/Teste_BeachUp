@@ -10,6 +10,11 @@
 
       <section class="form-section">
         <div class="form-wrapper">
+          <div class="home">
+            <a (click)="irPara('home')"><mat-icon>arrow_back</mat-icon> Voltar para a home</a>
+          </div>
+
+
           <div class="brand">
             <span class="brand-white">Beach</span><span class="brand-orange">Up</span>
           </div>
@@ -41,6 +46,11 @@
     <div class="auth-page reverse">
       <section class="form-section">
         <div class="form-wrapper">
+
+          <div class="home">
+            <a (click)="irPara('home')"><mat-icon>arrow_back</mat-icon> Voltar para a home</a>
+          </div>
+
           <div class="brand">
             <span class="brand-white">Beach</span><span class="brand-orange">Up</span>
           </div>
@@ -52,13 +62,6 @@
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Senha" />
             <input type="password" placeholder="Confirmar senha" />
-
-            <select>
-              <option value="">Cidade</option>
-              <option value="jandaia-do-sul">Jandaia do Sul</option>
-              <option value="apucarana">Apucarana</option>
-              <option value="maringa">Maringá</option>
-            </select>
 
             <button type="button" class="btn-primary">Criar conta</button>
 
@@ -72,6 +75,8 @@
               Já tem conta?
               <a class="link-action" id="btn" (click)="toggle()">Entrar</a>
             </p>
+
+
           </form>
         </div>
       </section>
